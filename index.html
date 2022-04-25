@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Vanilla Search Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <span class="search-bar">
+            <form class="d-flex" id="search-form">
+                <div class="row">
+                    <div class="col">
+                        <input type="search" placeholder="Type a city..." autofocus="on" autocomplete="off"
+                            id="city-input" class="form-control shadow-sm" />
+                    </div>
+                    <div class="col-3">
+                        <input type="submit" value="Search" class="form-control btn btn primary shadow-sm" />
+                    </div>
+                </div>
+
+
+            </form>
+        </span>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="current-city" id="city"></h1>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-6">
+                <div class="actual-weather">
+                    <img class="current-weather-temperature" src="" id="icon" class="float-left" />
+                </div>
+            </div>
+
+            <div class="col-6">
+                <h3 class="current-date" Thursday April 8 2021<br />
+                <span class="hour"></span>
+                <div id="date"></div>
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="current-temperature">
+                    <h4 id="temperature"> <span id="temperature"></span></h4>
+                    <p class="degrees">
+
+                        <a href="#" id="celsius-link">°C</a> |
+                        <a href="#" id="fahrenheit-link">°F</a>
+                    </p>
+                    <p id="description">
+                    </p>
+                </div>
+                <div class="current-stats" id="stats">
+                    <p class="humidity">Humidity: <span id="humidity"> </span>%</p>
+                    <p class="wind">Wind: <span id="wind"></span> km/hr </p>
+                </div>
+            </div>
+        </div>
+        <div class="weather-forecast" id="forecast"></div>
+    </div>
+
+    <small>
+
+        <a href="https://github.com/NuraWarsame/new.weatherapp"> Open-source code</a> by Nura Warsame
+
+    </small>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
